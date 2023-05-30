@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinnabon</title>
+    <style>
+        .box {
+            background: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 9px 9px 15px rgb(200, 200, 200);
+        }
+
+        h1 {
+            text-align: center;
+            color: #876445;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+
+       h2 {
+        text-align: center;
+        border: 1px solid #FCF8E8;
+        padding: 15px;
+        font-size: 17px;
+        border-radius: 18px;
+        color: #FCF8E8;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 61%;
+            border-radius: 19px;
+            width="500"
+        }
+
+        p {
+            line-height: 1.3;
+            font-size: 15px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 15px 0 0 0;
+        }
+
+        .midle-text{
+            text-align: center;
+            margin-bottom: 9px;
+            
+        }
+
+        .link {
+            display: block;
+            margin-top: 7px;
+            font-size: 12px;
+            text-decoration: none;
+            color: #876445;
+        }
+        
+        .link:hover{
+            text-decoration: underline;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: #876445;
+            background-color: #76BA99;
+            border: none;
+            font-size: 19px;
+            padding: 13px 30px;
+            margin-bottom: 20px;
+            border-radius: 19px;
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #CA955C;
+        }
+
+        .autor {
+            text-align: center;
+            color: #737373;
+            font-size: 13px;
+        }
+
+
+    </style>
+</head>
+<body>  
+    <div class="box">
+        <h1>
+            I love Cinnabon
+        </h1>
+        <h2>
+            Especially Cinnabon
+        </h2>
+        <img src="https://images-gmi-pmc.edge-generalmills.com/3787dbbd-ba1f-4ff0-a03d-d2eef12f09f6.jpg" 
+        alt="Connabon">
+        <p>
+
+            <strong>Cinnabon </strong> is an American chain of baked goods stores and kiosks, normally found in areas with high pedestrian traffic such as malls, airports and rest stops.
+            <br class="midle-text"><em>The company's signature item is a cinnamon roll.</em> 
+            <br> As of December 2017, there are more than 1,200 Cinnabon bakeries operating in 48 countries. Its headquarters are in Sandy Springs, Georgia, United States.
+
+            <br/>
+            <a href="https://en.wikipedia.org/wiki/Cinnabon" class="link">Learn more on Wikipedia</a>
+        </p>
+        <button>
+            Buy Cinnabon
+        </button>
+        <div class="autor">
+        Coded by Anastasiia Kosinova
+        </div>
+    </div>
+    <script>
+        function buy() {
+            let name = prompt ("What is your name?");
+            let email = prompt ("What is your e-mail?");
+
+            if (name.length > 0 && email.length > 0) {
+              alert ("Thank you, " + name + "! We will contact you by e-mail: " + email)   
+            } else {
+                alert ("Sorry, please enter your details 😥")
+            }
+           
+        }
+        
+        let buyButton = document.querySelector("button")
+        buyButton.addEventListener("click", buy)
+
+    </script>
+</body>
+</html>
